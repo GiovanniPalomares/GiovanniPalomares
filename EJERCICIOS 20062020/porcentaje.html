@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" charset=”utf-8″/ />
+
+    <title>Porcentaje Hombres - Mujeres</title>
+    <script language="javascript">
+        var numAlumnos;
+        var numHombres;
+        var numMujeres;
+        var porcHombres;
+        var porcMujeres;
+        alert("Un maestro desea saber el porcentaje de hombre y mujeres de un grupo, es por ello que le solicita un programa que se encargue de calcularlo. ");
+        numAlumnos = prompt("Ingrese el numero de alumnos que hay en el grupo: ");
+        numHombres = prompt("Ingrese el numero de hombres en el grupo: ");
+        numMujeres = parseInt(numAlumnos) - parseInt(numHombres);
+        porcHombres = (parseInt(numAlumnos) * parseInt(numHombres)) / 100;
+        porcMujeres = (parseInt(numAlumnos) * parseInt(numMujeres)) / 100;
+        document.write("En el grupo el " + porcHombres + "% son hombres y el " + porcMujeres + "% son mujeres.");
+    </script>
+</head>
+
+<body></body>
+
+</html>
